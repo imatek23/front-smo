@@ -4,7 +4,7 @@ import NavbarScreen from "./authLayout/navbar/NavbarScreen";
 
 const Layout = ({ children }) => {
 
-    const [openSidebar, setOpenSidebar] = useState(false);
+    const [openSidebar, setOpenSidebar] = useState(true);
 
     return (
         <div className="flex h-screen">
