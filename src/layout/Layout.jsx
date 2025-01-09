@@ -4,14 +4,12 @@ import NavbarScreen from "./authLayout/navbar/NavbarScreen";
 
 const Layout = ({ children }) => {
 
-    const [openSidebar, setOpenSidebar] = useState(true);
+    const [openSidebar, setOpenSidebar] = useState(false);
 
     return (
         <div className="flex h-screen">
             {/* Sidebar */}
-            <div className={`${openSidebar ? "w-64" : "w-16"} transition-all duration-300 hidden md:block`}>
-                <SidebarScreen openSidebar={openSidebar} />
-            </div>
+            <SidebarScreen openSidebar={openSidebar} />
 
             {/* Contenedor principal */}
             <div className="flex-1 flex flex-col">
@@ -21,7 +19,7 @@ const Layout = ({ children }) => {
                 </div>
 
                 {/* Contenido principal */}
-                <div className="flex-1 overflow-auto text-white ">
+                <div className="flex-1 overflow-auto text-white">
                     {children}
                 </div>
             </div>
