@@ -7,28 +7,24 @@ const Layout = ({ children }) => {
     const [openSidebar, setOpenSidebar] = useState(true);
 
     return (
-        <div className="layout-wrapper flex h-screen transition-all duration-300">
+        <div className="flex h-screen">
             {/* Sidebar */}
-            <div className={openSidebar && 'sidebar-wrapper'}>
+            <div className={`${openSidebar ? "w-64" : "w-16"} transition-all duration-300 hidden md:block`}>
                 <SidebarScreen openSidebar={openSidebar} />
             </div>
 
             {/* Contenedor principal */}
-            <div
-                className={`main-content-wrapper flex-1 flex flex-col transition-all duration-300 ${openSidebar ? "ml-0" : "ml-16"
-                    }`}
-            >
+            <div className="flex-1 flex flex-col">
                 {/* Navbar */}
-                <div className="navbar-wrapper bg-gray-800 h-16 flex items-center">
+                <div className="h-16">
                     <NavbarScreen openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
                 </div>
 
                 {/* Contenido principal */}
-                <div className="flex-1 overflow-auto bg-bg-color-main text-white">
+                <div className="flex-1 overflow-auto text-white ">
                     {children}
                 </div>
             </div>
-
         </div>
     );
 };

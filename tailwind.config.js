@@ -25,6 +25,7 @@ export default {
         'text-color-secundary': '#878a99',
         'border-color-input-error': '#d45c44',
         'bg-color-main': '#292E32',
+        'bg-color-user': '#31373c',
       },
     }
   },
