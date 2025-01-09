@@ -1,0 +1,36 @@
+/* Contenedor principal del layout */
+.layout-wrapper {
+    display: flex;
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar-wrapper {
+    width: 18rem;
+    /* Ancho fijo del sidebar */
+    background-color: #1b1e23;
+    /* Fondo oscuro */
+}
+
+/* Navbar */
+.navbar-wrapper {
+    height: 4rem;
+    /* Altura del navbar */
+    background-color: #1b1e23;
+    /* Fondo oscuro */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1rem;
+}
+
+/* Contenido principal */
+.content-wrapper {
+    overflow-y: auto;
+    /* Habilita el scroll vertical */
+    background-color: #292E32;
+    /* Fondo más oscuro para el contenido */
+    padding: 1rem;
+    /* Espaciado interno */
+}
