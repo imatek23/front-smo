@@ -1,6 +1,6 @@
 export const postJwtLogin = async ({ username, password }) => {
     try {
-        const response = await fetch('http://10.5.211.253:8000/token', {
+        const response = await fetch('http://10.5.211.101:8000/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

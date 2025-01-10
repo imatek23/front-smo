@@ -4,6 +4,7 @@ import './spinner.css';
 const SpinnerScreen = () => {
     return (
         <span className="loader"></span>
+        
     )
 }
 

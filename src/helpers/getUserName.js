@@ -1,6 +1,6 @@
 export const getUserName = async (token) => {
 
-    const url = 'http://10.5.211.253:8000/users/me';
+    const url = 'http://10.5.211.101:8000/users/me';
     try {
         const resp = await fetch(url, {
             method: "GET",

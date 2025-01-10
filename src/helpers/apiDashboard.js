@@ -2,7 +2,7 @@
 
 export const PostLoginDashboard = async () => {
     try {
-        const url = 'http://10.5.211.253:8001/apinext/token';
+        const url = 'http://10.5.211.101:8001/apinext/token';
         const resp = await fetch(url, {
             method: 'POST',
             headers: {

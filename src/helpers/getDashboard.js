@@ -1,7 +1,7 @@
 
 
 export const GetDashboard = async () => {
-    const url = 'http://10.5.211.253:8001/apinext/dashboard';
+    const url = 'http://10.5.211.101:8001/apinext/dashboard';
     const token = window.localStorage.getItem('apiToken');
 
     try {

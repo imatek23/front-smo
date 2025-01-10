@@ -1,22 +1,34 @@
 import React from 'react'
 
-const JaulasTabla = () => {
+
+const ModeloCrecimientoTabla = () => {
     return (
+        <div className="overflow-auto">
         <table className="table-auto border-collapse border-b border-gray-300 w-full text-sm mt-10">
             <thead>
                 <tr className="bg-bg-color-placeholder-login">
-                    <th className=" border-gray-300 px-4 py-2">#</th>
-                    <th className=" border-gray-300 px-4 py-2">Nombre</th>
-                    <th className=" border-gray-300 px-4 py-2">Código PLC</th>
-                    <th className=" border-gray-300 px-4 py-2">Pos. Selectora</th>
-                    <th className=" border-gray-300 px-4 py-2">T. Soplado</th>
-                    <th className=" border-gray-300 px-4 py-2">Ancho</th>
-                    <th className=" border-gray-300 px-4 py-2">Largo</th>
-                    <th className=" border-gray-300 px-4 py-2">Profundidad</th>
-                    <th className=" border-gray-300 px-4 py-2">Forma</th>
-                    <th className=" border-gray-300 px-4 py-2">% Blower</th>
-                    <th className=" border-gray-300 px-4 py-2">% Virtualizado</th>
-                    <th className=" border-gray-300 px-4 py-2">Acciones</th>
+                    <th className="border-gray-300 px-4 py-2">#</th>
+                    <th className="border-gray-300 px-4 py-2">Nombre</th>
+                    <th className="border-gray-300 px-4 py-2">Tipo</th>
+                    <th className="border-gray-300 px-4 py-2">c1</th>
+                    <th className="border-gray-300 px-4 py-2">c2</th>
+                    <th className="border-gray-300 px-4 py-2">a0</th>
+                    <th className="border-gray-300 px-4 py-2">a1</th>
+                    <th className="border-gray-300 px-4 py-2">a2</th>
+                    <th className="border-gray-300 px-4 py-2">a3</th>
+                    <th className="border-gray-300 px-4 py-2">a4</th>
+                    <th className="border-gray-300 px-4 py-2">a5</th>
+                    <th className="border-gray-300 px-4 py-2">a6</th>
+                    <th className="border-gray-300 px-4 py-2">a7</th>
+                    <th className="border-gray-300 px-4 py-2">b0</th>
+                    <th className="border-gray-300 px-4 py-2">b1</th>
+                    <th className="border-gray-300 px-4 py-2">b2</th>
+                    <th className="border-gray-300 px-4 py-2">b3</th>
+                    <th className="border-gray-300 px-4 py-2">b4</th>
+                    <th className="border-gray-300 px-4 py-2">b5</th>
+                    <th className="border-gray-300 px-4 py-2">b6</th>
+                    <th className="border-gray-300 px-4 py-2">b7</th>
+                    <th className="border-gray-300 px-4 py-2">Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,7 +61,9 @@ const JaulasTabla = () => {
                 ))} */}
             </tbody>
         </table>
+    </div>
+    
     )
 }
 
-export default JaulasTabla   
+export default ModeloCrecimientoTabla   

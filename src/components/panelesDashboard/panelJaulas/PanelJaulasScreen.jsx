@@ -42,16 +42,16 @@ const PanelJaulasScreen = () => {
       );
 
       setCombinedData(lineasConJaulas.filter((linea) => linea !== null)); // Filtrar líneas no encontradas
-      console.log("Datos combinados:", lineasConJaulas);
+      // console.log("Datos combinados:", lineasConJaulas);
     } catch (error) {
-      console.error("Error al obtener datos:", error);
+      // console.error("Error al obtener datos:", error);
     }
   };
 
   useEffect(() => {
     // Obtener datos del WebSocket
     const ws = GetWS((data) => {
-      console.log("Datos del WebSocket:", data);
+      // console.log("Datos del WebSocket:", data);
       setSocketData(data);
       fetchData(data); // Llamar al fetchData con datos del socket
     });

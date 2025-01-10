@@ -3,7 +3,7 @@
 
 export const GetWS = async (onDataReceived) => {
 
-    const url = 'ws://10.5.211.253:8000/ws/apinext/dashboard';
+    const url = 'ws://10.5.211.101:8000/ws/apinext/dashboard';
     const ws = new WebSocket(url);
 
     //Escuchar eventos
